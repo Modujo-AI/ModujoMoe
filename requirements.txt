@@ -1,0 +1,7 @@
+torch>=2.8
+transformers>=5.16.0
+datasets>=4.0
+accelerate>=1.10
+ms-swift>=4.5.3
+pyarrow>=20
+safetensors>=0.5

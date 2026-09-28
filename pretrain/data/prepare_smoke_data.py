@@ -7,7 +7,8 @@ from pathlib import Path
 from datasets import load_dataset
 
 
-DATA_DIR = Path(os.getenv("MODUJO_DATA_DIR", "/workspace/datasets/modujo"))
+ROOT_DIR = Path(__file__).resolve().parents[2]
+DATA_DIR = Path(os.getenv("MODUJO_DATA_DIR", ROOT_DIR / "datasets/modujo"))
 OUT = DATA_DIR / "smoke_bilingual.jsonl"
 SOURCES = (
     ("HuggingFaceFW/fineweb-edu", "sample-10BT", 96),

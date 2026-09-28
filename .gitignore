@@ -7,3 +7,26 @@ checkpoints/
 core
 core.*
 .cache/
+
+# Local runtimes and experiment tracking
+.runtime/
+wandb/
+pretrain/wandb/
+mlruns/
+mlflow.db*
+
+# Generated corpora, checkpoints, and model exports
+datasets/
+models/
+output/
+sft/models/
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.arrow
+
+# Editor and OS metadata
+.DS_Store
+.idea/
+.vscode/
